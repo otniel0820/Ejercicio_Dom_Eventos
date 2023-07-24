@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Ejercicio Dom medio</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <h2>Ejercicio 1</h2>
             <h3>Cada vez que se haga click en este botón, el background de toda esta página debe cambiar a un color
                 aleatorio.</h3>
-            <button type="button">Change bacground color!</button>
+            <button id="btnBack" type="button">Change bacground color!</button>
         </article>
         <article id="ejercicio-2">
             <h2>Ejercicio 2</h2>
@@ -25,8 +25,8 @@
             <div id="counter-container">
                 <span id="counter">0</span>
                 <div id="counter-btns">
-                    <button type="button">+1</button>
-                    <button type="button">-1</button>
+                    <button type="button" id="btnSuma">+1</button>
+                    <button type="button" id="btnResta">-1</button>
                 </div>
             </div>
         </article>
@@ -34,47 +34,47 @@
             <h2>Ejercicio 3</h2>
             <h3>Cuando se haga click en el botón, el texto debe desaparecer; si se vuelve a hacer click, aparecerá, y
                 así sucesivamente.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ipsam alias reprehenderit blanditiis
+            <p id="hideText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, ipsam alias reprehenderit blanditiis
                 quis assumenda cumque quibusdam libero repudiandae minus velit et doloremque enim odio perspiciatis
                 quidem suscipit quas doloribus!</p>
-            <button type="button">Hide text</button>
+            <button type="button" id="hideShow">Hide text</button>
         </article>
         <article id="ejercicio-4">
             <h2>Ejercicio 4</h2>
             <h3>Cuando se haga click en el botón, debe eliminarse el primer párrafo de la lista. Si no queda ninguno, no
                 debe suceder nada, tampoco mostrar error en la consola.</h3>
-            <ul>
+            <ul id="list">
                 <li>Párrafo 1</li>
                 <li>Párrafo 2</li>
                 <li>Párrafo 3</li>
                 <li>Párrafo 4</li>
                 <li>Párrafo 5</li>
             </ul>
-            <button type="button">Delete &lt;li&gt;</button>
+            <button type="button" id="delete">Delete &lt;li&gt;</button>
         </article>
         <article id="ejercicio-5">
             <h2>Ejercicio 5</h2>
             <h3>Debajo de este enunciado hay una lista desordenada que no contiene ningún elemento, y, por lo tanto, no es visible (debes mirar en el HTML). Debajo de esa lista verás varios párrafos: cuando se haga click en el botón de cada párrafo, el texto de ese párrafo (y no otro) debe añadirse a la lista.</h3>
-            <ul></ul>
+            <ul id="listAdd"></ul>
             <div class="paragraph-container">
-                <p>Texto del párrafo 1</p>
-                <button type="button">Add text</button>
+                <p class="pAdd">Texto del párrafo 1</p>
+                <button type="button" class="addButton">Add text</button>
             </div>
             <div class="paragraph-container">
-                <p>Texto del párrafo 2</p>
-                <button type="button">Add text</button>
+                <p class="pAdd">Texto del párrafo 2</p>
+                <button type="button" class="addButton">Add text</button>
             </div>
             <div class="paragraph-container">
-                <p>Texto del párrafo 3</p>
-                <button type="button">Add text</button>
+                <p class="pAdd">Texto del párrafo 3</p>
+                <button type="button" class="addButton">Add text</button>
             </div>
             <div class="paragraph-container">
-                <p>Texto del párrafo 4</p>
-                <button type="button">Add text</button>
+                <p class="pAdd">Texto del párrafo 4</p>
+                <button type="button" class="addButton">Add text</button>
             </div>
             <div class="paragraph-container">
-                <p>Texto del párrafo 5</p>
-                <button type="button">Add text</button>
+                <p class="pAdd">Texto del párrafo 5</p>
+                <button type="button" class="addButton">Add text</button>
             </div>
         </article>
         <article id="ejercicio-6">
@@ -89,7 +89,7 @@
                 <div class="square"></div>
                 <div class="square"></div>
             </div>
-            <button type="button">Add &lt;div&gt;</button>
+            <button type="button" id="btnAddDiv">Add &lt;div&gt;</button>
         </article>
         <article id="ejercicio-7">
             <h2>Ejercicio 7</h2>
