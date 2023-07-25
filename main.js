@@ -101,16 +101,17 @@ const greenBtn = document.querySelector('#greenBtn');
 const blackBtn = document.querySelector('#blackBtn');
 const purpleBtn = document.querySelector('#purpleBtn');
 
-blueBtn.addEventListener('click', changeColor('blue'));
-redBtn.addEventListener('click', changeColor('red'));
-greenBtn.addEventListener('click', changeColor('green'));
-blackBtn.addEventListener('click', changeColor('black'));
-purpleBtn.addEventListener('click', changeColor('purple'));
+blueBtn.addEventListener('click', () => changeColor('blue'));
+redBtn.addEventListener('click', () => changeColor('red'));
+greenBtn.addEventListener('click', () => changeColor('green'));
+blackBtn.addEventListener('click', () => changeColor('black'));
+purpleBtn.addEventListener('click', () => changeColor('purple'));
 
 function changeColor(color) {
     colorDiv.style.backgroundColor = color;
 }
 
+'-----Ejercicio 8-----'
 
 
 
